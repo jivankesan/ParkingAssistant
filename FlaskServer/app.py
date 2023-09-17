@@ -7,7 +7,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-co = cohere.Client("w3k6SMLDH0SFtVvCwshQoomZwONOsiM5iahj3ixY")
+co = cohere.Client("APIKEY")
 
 free_spots = 0
 ser = serial.Serial("/dev/cu.usbmodem21101", 9600)
