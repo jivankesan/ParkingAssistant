@@ -68,10 +68,10 @@ export default function App() {
 
 
 
-  // Fetch the number of free spots (replace with your actual API call)
+  // Fetch the number of free spots
   const fetchFreeSpots = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:5000/');
+      const response = await fetch('//replace wiht serveraddress/');
       const text = await response.text();
       const fetchedFreeSpots = text.split(': ')[1];
       setFreeSpots(fetchedFreeSpots);
